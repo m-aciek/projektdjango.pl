@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang='pl'>
+  <head>
+    <title>Projekt Django</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+      }
+      .above-wrapper {
+        margin-bottom: 0;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      @media only screen and (max-width: 600px) {
+        .wrapper {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>Django ułatwia budowanie lepszych aplikacji internetowych szybciej <span style='white-space:nowrap'>i z mniejszą</span> ilością kodu.</p>
+    <h2>Dokumentacja</h2>
+    <p><a href='https://docs.djangoproject.com/pl/stable/'>Dokumentacja Django w języku polskim</a></p>
+    <h2 class='above-wrapper'>Społeczność</h2>
+    <div class='wrapper'>
+    <div>
+      <p>Lista mailingowa polskiej społeczności Django: zasięgnij rady i bądź na bieżąco.
+      <form action='https://groups.google.com/group/django-pl/boxsubscribe'>
+        <input type='email' name='email' placeholder='wpisz e-mail'/><input type='submit' value='Dołącz do grupy'/>
+      </form>
+      <p class='above-wrapper'><small>Możesz też dołączyć wysyłając e-mail na adres <a href='mailto:django-pl+subscribe@googlegroups.com'>django-pl+subscribe@googlegroups.com</a> <span style='white-space:nowrap'>i postępując</span> zgodnie z otrzymanymi instrukcjami.</small></p>
+    </div>
+    <div>
+      <p>Kanał IRC #django-pl: czatuj z innymi użytkownikami Django.
+      <form action='https://webchat.freenode.net/'>
+        <input type='hidden' value='#django-pl' name='channels'/>
+        <input type='submit' value='Rozpocznij (wymaga uwierzytelnienia)'/>
+      </form>
+      <p class='above-wrapper'><small>Możesz też rozpocząć korzystając z <a href='irc://irc.freenode.net/django-pl'>własnego klienta IRC</a>.</small></p>
+    </div>
+    </div>
+    <h3>Ogłoś się światu</h3>
+    <p><a href='https://people.djangoproject.com/pl/'>Ludzie Django</a> zlokalizuj Djangonautów niedaleko siebie</p>
+    <p><a href='https://www.djangosites.org/search/?query=polish'>Strony oparte na Django</a> dodaj swoją stronę do listy</p>
+    <p><a href='https://docs.djangoproject.com/pl/stable/internals/contributing/localizing/#translations'>Tłumaczenie Django</a></p>
+    <h2>Rozszerzenie tej strony</h2>
+    <p>Masz sugestie zmian? <a href='https://twitter.com/m_aciek'>Napisz do autora.</a></p>
+  </body>
+</html>
