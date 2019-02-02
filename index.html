@@ -4,23 +4,6 @@
     <title>Projekt Django</title>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      //body {
-      //  font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
-      //}
-      .above-wrapper {
-        margin-bottom: 0;
-      }
-      .wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-      @media only screen and (max-width: 600px) {
-        .wrapper {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
     <link rel='stylesheet' href='static/bulma.min.css'>
     <!--script defer src='https://use.fontawesome.com/releases/v5.3.1/js/all.js'></script-->
     <meta name="google-site-verification" content="rq-cKUY5AiX8je8n35CAuwaLXWgLK_xMaCKTpaSpst4" />
@@ -45,33 +28,34 @@
     <p><b>Niepomiernie skalowalny.</b> Jedne z najbardziej obciążonych serwisów w Internecie wykorzystują zdolność Django do szybkiego i elastycznego skalowania.</p>
     <h2 id='pierwsze-kroki'>Pierwsze kroki</h2>
     <p>W zależności od tego, jak bardzo jesteś nowy w Django, możesz <a href='https://docs.djangoproject.com/pl/stable/intro/install/'>je zainstalować</a>, <a href='https://docs.djangoproject.com/pl/stable/intro/tutorial01/'>wypróbować tutorial</a> lub po prostu <a href='https://docs.djangoproject.com/pl/'>zagłębić się w dokumentację</a>.</p>
-    <h2 class='above-wrapper'>Bądź w kontakcie</h2>
-    <div class='wrapper'>
-    <div>
+    <h2>Bądź w kontakcie</h2>
+    <div class='columns'>
+    <div class='column'>
       <p>Lista mailingowa polskiej społeczności Django: zasięgnij rady i bądź na bieżąco.
-      <form action='https://groups.google.com/group/django-pl/boxsubscribe'>
-        <input type='email' name='email' placeholder='wpisz e-mail'/><input type='submit' value='Dołącz do grupy'/>
+      <form class='field has-addons' action='https://groups.google.com/group/django-pl/boxsubscribe'>
+        <div class='control'><input class='input' type='email' name='email' placeholder='wpisz e-mail'/></div>
+	<div class='control'><input class='button' type='submit' value='Dołącz do grupy'/></div>
       </form>
-      <p class='above-wrapper'><small>Możesz też dołączyć wysyłając e-mail na adres <a href='mailto:django-pl+subscribe@googlegroups.com'>django-pl+subscribe@googlegroups.com</a> <span style='white-space:nowrap'>i postępując</span> zgodnie z otrzymanymi instrukcjami.</small></p>
+      <p><small>Możesz też dołączyć wysyłając e-mail na adres <a href='mailto:django-pl+subscribe@googlegroups.com'>django-pl+subscribe@googlegroups.com</a> <span style='white-space:nowrap'>i postępując</span> zgodnie z otrzymanymi instrukcjami.</small></p>
     </div>
-    <div>
+    <div class='column'>
       <p>Kanał IRC #django-pl: czatuj z innymi użytkownikami Django.
       <form action='https://webchat.freenode.net/'>
         <input type='hidden' value='#django-pl' name='channels'/>
-        <input type='submit' value='Rozpocznij (wymaga uwierzytelnienia)'/>
+        <input class='button' type='submit' value='Rozpocznij (wymaga uwierzytelnienia)'/>
       </form>
-      <p class='above-wrapper'><small>Możesz też rozpocząć korzystając z <a href='irc://irc.freenode.net/django-pl'>własnego klienta IRC</a>.</small></p>
+      <p><small>Możesz też rozpocząć korzystając z <a href='irc://irc.freenode.net/django-pl'>własnego klienta IRC</a>.</small></p>
     </div>
     </div>
     <h3>Ogłoś się światu</h3>
-    <p><a href='https://people.djangoproject.com/pl/'>Ludzie Django</a> zlokalizuj Djangonautów niedaleko siebie</p>
-    <p><a href='https://www.djangosites.org/search/?query=polish'>Strony oparte na Django</a> dodaj swoją stronę do listy</p>
-    <p><a href='https://docs.djangoproject.com/pl/stable/internals/contributing/localizing/#translations'>Tłumaczenie Django</a></p>
+    <ul>
+    <li><a href='https://people.djangoproject.com/pl/'>Ludzie Django</a> zlokalizuj Djangonautów niedaleko siebie</li>
+    <li><a href='https://www.djangosites.org/search/?query=polish'>Strony oparte na Django</a> dodaj swoją stronę do listy</li>
+    <li><a href='https://docs.djangoproject.com/pl/stable/internals/contributing/localizing/#translations'>Tłumaczenie Django</a></li>
     </div>
     </section>
     <section class='footer'>
-    <div class='container'>
-    <h2>Rozszerzenie tej strony</h2>
+    <div class='container content'>
     <p>Masz sugestie zmian? <a href='https://github.com/m-aciek/projektdjango.pl/issues'>Dodaj zgłoszenie</a> lub <a href='https://github.com/m-aciek/projektdjango.pl/pulls'>wyślij pull request</a>.</p>
     </div>
     </section>
